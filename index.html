@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinámica Luteal en Bovinos y Porcinos — Completo con Tablas y Bibliografía</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    body { font-family:'Open Sans', sans-serif; background:#f8f9fa; }
+    .slide { background: linear-gradient(135deg,#ffffff 0%,#f1f8fe 100%); border-radius: 12px; box-shadow:0 10px 25px rgba(0,0,0,.08); overflow:hidden; }
+    .phase-card { transition: all .3s ease; border-left: 5px solid; }
+    .phase-card:hover { transform: translateY(-5px); box-shadow:0 5px 15px rgba(0,0,0,.1); }
+    .timeline { position: relative; padding-left: 50px; }
+    .timeline::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, #4f46e5, #ec4899); border-radius: 10px; }
+    .timeline-item { position: relative; margin-bottom: 30px; }
+    .timeline-item::before { content: ''; position: absolute; left: -40px; top: 5px; width: 20px; height: 20px; border-radius: 50%; border: 4px solid; background:#fff; }
+    figure { text-align: center; }
+    figcaption { font-size: 0.8rem; color: #6b7280; margin-top: 4px; }
+    .table { width:100%; border-collapse:separate; border-spacing:0; }
+    .table th, .table td { padding:.66rem .8rem; border-bottom:1px solid #e5e7eb; }
+    .table th { text-align:left; font-weight:700; color:#374151; background:#f3f4f6; }
+    .chip { border:1px solid rgba(0,0,0,.06); background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.05); }
+  </style>
+</head>
+<body class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-6xl mx-auto space-y-12">
+
+    <!-- Portada -->
+    <div class="slide p-8 text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Dinámica Luteal en Bovinos y Porcinos</h1>
+      <p class="text-xl text-gray-600 mb-8"></p>
+      <div class="w-40 h-2 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full"></div>
+    </div>
+
+    <!-- Introducción -->
+    <div class="slide p-8 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Introducción</h2>
+        <p class="text-gray-700 mb-4">La dinámica luteal incluye <b>formación</b>, <b>maduración</b>, <b>mantenimiento</b> y <b>regresión</b> del cuerpo lúteo (CL) tras la ovulación. El CL secreta <b>progesterona (P4)</b>, que suprime nuevas ondas foliculares, prepara el endometrio y sostiene la posible preñez.</p>
+        <p class="text-gray-700 mb-4">En <b>bovinos</b>, el CL suele ser único y la fase lútea dura ≈14–17 días; la <b>PGF<sub>2α</sub> uterina</b> gatilla la luteólisis hacia el día 17; el reconocimiento materno de la gestación bloquea dicha señal.</p>
+        <p class="text-gray-700">En <b>porcinos</b>, hay múltiples CL activos; la fase lútea dura ≈14–16 días y la luteólisis se da por <b>pulsos</b> de PGF<sub>2α</sub>. En gestación, <b>estrógenos conceptuales</b> desvían la PGF<sub>2α</sub> al lumen uterino para mantener los CL.</p>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1524820540432-66497b517f90?q=80&w=1200&auto=format&fit=crop" alt="Bovino" class="w-full h-auto max-h-[420px] object-cover rounded-lg shadow"/>
+        <figcaption>Referencial: Bovinos</figcaption>
+      </figure>
+    </div>
+
+    <!-- Bovinos -->
+    <div class="slide p-8 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Dinámica Luteal en Bovinos</h2>
+        <div class="grid lg:grid-cols-2 gap-6 mb-10">
+          <div class="phase-card bg-white p-6 rounded-lg border-l-indigo-500">
+            <div class="text-indigo-500 font-bold text-lg mb-2">Formación (d 1–4)</div>
+            <p class="text-gray-600">Luteinización; inicio de P4; angiogénesis intensa y aumento de receptores LH.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+          <div class="phase-card bg-white p-6 rounded-lg border-l-pink-500">
+            <div class="text-pink-500 font-bold text-lg mb-2">Maduración (d 5–7)</div>
+            <p class="text-gray-600">Crecimiento/vascularización del CL; P4 en ascenso y sensibilidad creciente a PGF<sub>2α</sub>.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+          <div class="phase-card bg-white p-6 rounded-lg border-l-purple-500">
+            <div class="text-purple-500 font-bold text-lg mb-2">Mantenimiento (d 7–16)</div>
+            <p class="text-gray-600">P4 elevada; supresión del eje GnRH/FSH/LH y de ovulaciones subsecuentes.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+          <div class="phase-card bg-white p-6 rounded-lg border-l-blue-500">
+            <div class="text-blue-500 font-bold text-lg mb-2">Regresión (≈ d 17–21)</div>
+            <p class="text-gray-600">PGF<sub>2α</sub> uterina induce luteólisis; P4 cae y reaparece el estro.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+        </div>
+        <!-- Hitos en una línea: Bovinos -->
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="chip px-3 py-1 rounded-full">Ovulación➜</span>
+          <span class="chip px-3 py-1 rounded-full">CL joven (d1–4)➜</span>
+          <span class="chip px-3 py-1 rounded-full">P4 ↑ (d5–7)➜</span>
+          <span class="chip px-3 py-1 rounded-full">Pico P4 (d7–16)➜</span>
+          <span class="chip px-3 py-1 rounded-full">PGF<sub>2α</sub> uterina➜</span>
+          <span class="chip px-3 py-1 rounded-full">Luteólisis ≈ d17➜</span>
+          <span class="chip px-3 py-1 rounded-full">Retorno al estro</span>
+        </div>
+      </div>
+      <figure>
+        <img src="https://blog.agrovetmarket.com/wp-content/uploads/2022/05/Dinamica-folicular-bovino-2-ondas-1024x538.png" alt="Esquema ciclo bovino" class="w-full h-auto max-h-[480px] object-contain rounded-lg shadow"/>
+        <figcaption>Esquema de ciclo</figcaption>
+      </figure>
+    </div>
+
+    <!-- Porcinos -->
+    <div class="slide p-8 grid md:grid-cols-2 gap-8 items-center">
+      <figure>
+        <img src="https://www.pecuarios.club/uploads/Upload-5876d92f41ca3-11012017.jpeg" alt="Hormonas porcino" class="w-full h-auto max-h-[480px] object-contain rounded-lg shadow"/>
+        <figcaption>Gráfica hormonal en porcinos</figcaption>
+      </figure>
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Dinámica Luteal en Porcinos</h2>
+        <div class="grid lg:grid-cols-2 gap-6 mb-10">
+          <div class="phase-card bg-white p-6 rounded-lg border-l-indigo-500">
+            <div class="text-indigo-500 font-bold text-lg mb-2">Formación (d 1–4)</div>
+            <p class="text-gray-600">Desarrollo de múltiples CL; inicio de P4 por contribución aditiva.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+          <div class="phase-card bg-white p-6 rounded-lg border-l-pink-500">
+            <div class="text-pink-500 font-bold text-lg mb-2">Maduración (d 5–12)</div>
+            <p class="text-gray-600">Ampliación de tamaño/función; P4 total elevada; no hay CL dominante.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+          <div class="phase-card bg-white p-6 rounded-lg border-l-purple-500">
+            <div class="text-purple-500 font-bold text-lg mb-2">Mantenimiento (d 12–14)</div>
+            <p class="text-gray-600">P4 estable; soporte endometrial. En preñez, estrógenos conceptuales previenen la luteólisis.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+          <div class="phase-card bg-white p-6 rounded-lg border-l-blue-500">
+            <div class="text-blue-500 font-bold text-lg mb-2">Regresión (≈ d 15–21)</div>
+            <p class="text-gray-600">PGF<sub>2α</sub> uterina en pulsos → luteólisis casi sincrónica y retorno al celo.</p>
+            <p class="text-xs text-gray-500 mt-1"></p>
+          </div>
+        </div>
+        <!-- Hitos en una línea: Porcinos -->
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="chip px-3 py-1 rounded-full">Ovulación múltiple➜</span>
+          <span class="chip px-3 py-1 rounded-full">Varios CL (d1–4)➜</span>
+          <span class="chip px-3 py-1 rounded-full">P4 total ↑ (d5–12)➜</span>
+          <span class="chip px-3 py-1 rounded-full">Mantenimiento (d12–14)➜</span>
+          <span class="chip px-3 py-1 rounded-full">PGF<sub>2α</sub> pulsátil➜</span>
+          <span class="chip px-3 py-1 rounded-full">Luteólisis ≈ d15➜</span>
+          <span class="chip px-3 py-1 rounded-full">Retorno al celo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea de tiempo comparativa -->
+    <div class="slide p-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8">Comparación: Bovinos vs Porcinos</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">Bovinos</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4 class="font-bold text-indigo-600 mb-2">Formación (d1–4)</h4>
+              <p class="text-gray-600">Luteinización; inicio P4; angiogénesis.</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="font-bold text-pink-600 mb-2">Maduración (d5–7)</h4>
+              <p class="text-gray-600">Vascularización y esteroidogénesis ↑.</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="font-bold text-purple-600 mb-2">Mantenimiento (d7–16)</h4>
+              <p class="text-gray-600">P4 alta; supresión del eje.</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="font-bold text-blue-600 mb-2">Regresión (≈d17–21)</h4>
+              <p class="text-gray-600">PGF<sub>2α</sub> uterina → luteólisis.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">Porcinos</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4 class="font-bold text-indigo-600 mb-2">Formación (d1–4)</h4>
+              <p class="text-gray-600">Múltiples CL; P4 sumatoria.</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="font-bold text-pink-600 mb-2">Maduración (d5–12)</h4>
+              <p class="text-gray-600">Función conjunta de varios CL.</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="font-bold text-purple-600 mb-2">Mantenimiento (d12–14)</h4>
+              <p class="text-gray-600">P4 total elevada y estable.</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="font-bold text-blue-600 mb-2">Regresión (≈d15–21)</h4>
+              <p class="text-gray-600">PGF<sub>2α</sub> pulsátil → luteólisis sincrónica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aspectos Anatómicos y Endocrinos -->
+    <div class="slide p-8 grid md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-gray-800">Aspectos Anatómicos y Endocrinos</h2>
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">Bovinos</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li><b>Ovarios:</b> CL único prominente por ciclo; tamaño/ecogenicidad correlacionan con P4.</li>
+            <li><b>Útero:</b> bicorne; señal luteolítica local por PGF<sub>2α</sub>.</li>
+            <li><b>Endocrino:</b> P4 alta en fase media; reconocimiento gestacional evita luteólisis.</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">Porcinos</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li><b>Ovarios:</b> múltiples CL por ovulación múltiple; P4 total elevada por suma.</li>
+            <li><b>Útero:</b> cuernos largos; PGF<sub>2α</sub> en pulsos para luteólisis.</li>
+            <li><b>Endocrino:</b> estrógenos conceptuales → anti‑luteólisis en preñez.</li>
+          </ul>
+        </div>
+      </div>
+      <figure>
+        <img src="https://i.postimg.cc/t4tRXCMd/uteros.png" alt="Úteros comparados" class="w-full h-auto max-h-[480px] object-contain rounded-lg shadow-md"/>
+        <figcaption>Comparativa anatómica (referencial)</figcaption>
+      </figure>
+    </div>
+
+    <!-- Cuadro comparativo -->
+    <div class="slide p-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Cuadro comparativo</h2>
+      <div class="overflow-x-auto">
+        <table class="table text-sm min-w-[680px]">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Bovino</th>
+              <th>Porcino</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nº de cuerpos lúteos</td>
+              <td>Generalmente 1 por ciclo</td>
+              <td>Múltiples (ovulación múltiple)</td>
+            </tr>
+            <tr>
+              <td>Duración fase lútea</td>
+              <td>≈ 14–17 días</td>
+              <td>≈ 14–16 días</td>
+            </tr>
+            <tr>
+              <td>Punto de máxima P4</td>
+              <td>Días 7–16 (pico funcional)</td>
+              <td>Días 12–14 (P4 total por suma de CL)</td>
+            </tr>
+            <tr>
+              <td>Señal luteolítica</td>
+              <td>PGF<sub>2α</sub> uterina</td>
+              <td>PGF<sub>2α</sub> en pulsos</td>
+            </tr>
+            <tr>
+              <td>Anti‑luteólisis gestacional</td>
+              <td>Reconocimiento materno (bloqueo de luteólisis)</td>
+              <td>Estrógenos del concepto redirigen PGF<sub>2α</sub></td>
+            </tr>
+            <tr>
+              <td>Implicancias clínicas</td>
+              <td>Sincronización con PGF<sub>2α</sub>; soporte de P4</td>
+              <td>Protocolos ajustados a ovulación múltiple</td>
+            </tr>
+            <tr>
+              <td>Evaluación funcional</td>
+              <td>Ecografía y P4 sérica/leche</td>
+              <td>Ecografía (conteo CL) y P4 sérica</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bibliografía -->
+    <div class="slide p-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Bibliografía</h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-3">
+        <li>Producción Animal. (s.f.). <i>Fisiología reproductiva del bovino</i>. Recuperado de <a href="https://www.produccion-animal.com.ar/informacion_tecnica/inseminacion_artificial/71-fisiologia_reproductiva_del_bovino.pdf" class="text-indigo-600 underline">https://www.produccion-animal.com.ar/.../71-fisiologia_reproductiva_del_bovino.pdf</a></li>
+        <li>López‑Gatius, F., & Hunter, R. (2010). Reproductive physiology in the cow. <i>Physica A: Statistical Mechanics and its Applications</i>. Recuperado de <a href="https://www-sciencedirect-com.translate.goog/science/article/abs/pii/S0378432010004094?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" class="text-indigo-600 underline">ScienceDirect (versión traducida)</a></li>
+        <li>Martínez, E. et al. (2011). Dynamics of luteal function in pigs. <i>Physica A: Statistical Mechanics and its Applications</i>. Recuperado de <a href="https://www-sciencedirect-com.translate.goog/science/article/abs/pii/S0378432011000650?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" class="text-indigo-600 underline">ScienceDirect (versión traducida)</a></li>
+        <li>Magapor. (s.f.). <i>Anatomía y fisiología de la cerda</i>. Recuperado de <a href="https://magapor.com/actualidad-tecnica/anatomia-y-fisiologia-de-la-cerda/" class="text-indigo-600 underline">https://magapor.com/actualidad-tecnica/anatomia-y-fisiologia-de-la-cerda/</a></li>
+      </ul>
+    </div>
+
+    <!-- Créditos -->
+    <div class="slide p-12 text-center bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl">
+      <h2 class="text-3xl font-bold text-white mb-4">Dinámica Luteal en Bovinos y Porcinos</h2>
+      <p class="text-xl text-indigo-100 mb-8">Universidad San Sebastian</p>
+      <div class="w-32 h-1 bg-white bg-opacity-50 mx-auto mb-8 rounded-full"></div>
+      <p class="text-white mb-2">Autor/a: <span class="font-semibold">Benjamin Espinoza - Ronald Escandor - Catalina Casas-cordero</span></p>
+      <p class="text-white/80 text-sm"></p>
+    </div>
+  </div>
+</body>
+</html>
+
